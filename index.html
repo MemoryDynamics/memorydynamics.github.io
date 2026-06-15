@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Memory Dynamics</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
     <style>
         body {
             font-family: system-ui, sans-serif;
@@ -17,22 +20,28 @@
         header {
             background: #111;
             color: white;
-            padding: 4rem 2rem;
+            padding: 3.5rem 2rem;
             text-align: center;
+        }
+        header .logo-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.2rem;
         }
         header h1 {
             margin: 0;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             font-weight: 700;
         }
         header p {
-            margin-top: 1rem;
-            font-size: 1.3rem;
+            margin: 0.3rem 0 0;
+            font-size: 1.2rem;
             opacity: 0.9;
         }
         main {
             max-width: 900px;
-            margin: 2rem auto;
+            margin: 2.5rem auto;
             padding: 0 1.5rem;
         }
         section {
@@ -61,9 +70,10 @@
 <body>
 
 <header>
-    <div style="display:flex; align-items:center; justify-content:center; gap:1rem;">    
+    <div class="logo-wrap">
+
         <!-- Multipoint Burst Icon -->
-        <svg width="48" height="48" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
+        <svg width="52" height="52" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
           <circle cx="90" cy="90" r="10" fill="#fff" />
 
           <circle cx="40" cy="60" r="6" fill="#fff" opacity="0.85"/>
@@ -80,14 +90,11 @@
         </svg>
 
         <div>
-            <h1 style="margin:0;">Memory Dynamics</h1>
-            <p style="margin:0; opacity:0.9;">Exploring memory‑driven emergence, or: how memory transforms randomness into structure, intelligence, and physical realit.?</p>
+            <h1>Memory Dynamics</h1>
+            <p>Exploring memory‑driven emergence</p>
         </div>
 
     </div>
-        <!--     <h1>Memory Dynamics</h1>
-    <p>Exploring how memory transforms randomness into structure, intelligence, and physical reality.</p>
- -->
 </header>
 
 <main>
@@ -95,53 +102,24 @@
     <section>
         <h2>About</h2>
         <p>
-            Memory Dynamics is an open research organization investigating how simple event‑based 
-            processes, when coupled through memory and feedback, generate complex behavior across 
-            multiple scales.
             Memory Dynamics is an open research initiative exploring how memory transforms randomness 
-            into structure, behavior, and intelligence. We study minimal event‑based processes where
+            into structure, behavior, and intelligence. We study minimal event‑based processes where 
             interactions through time — rather than space — give rise to trajectories, attractors, 
-            and emergent physical or cognitive properties. 
-            Our goal is to uncover simple, universal principles that explain how complex systems 
-            organize themselves, from neural‑like computation to embodied intelligence.
+            and emergent physical or cognitive properties. Our goal is to uncover simple, universal 
+            principles that explain how complex systems organize themselves, from neural‑inspired 
+            computation to embodied intelligence.
         </p>
     </section>
 
     <section>
         <h2>Research Focus</h2>
         <ul>
-            <li>Memory‑Driven Emergence — Understanding how simple event processes, when coupled 
-                through temporal feedback, generate stable patterns, trajectories, and effective laws.</li>
-            <li>Multipoint Processes & Neural‑Inspired Dynamics — Exploring how distributed memory
-                interactions can implement mechanisms reminiscent of neural computation, without
-                relying on classical weights or continuous activations.</li>
-            <li>Embodied Memory Systems (Physical AI) — Investigating how memory‑based processes 
-                can be physically instantiated to produce adaptive, intelligent behavior in 
-                real‑world systems.</li>
-            <li>Emergent Geometry & Structure Formation — Studying how spatial order, dimensionality, 
-                and coherent structures arise from purely temporal relationships.</li>
-            <li>Minimal Models of Intelligence — Developing compact, testable models that reveal 
-                how complex behavior emerges from simple memory‑driven interactions.</li>
+            <li><strong>Memory‑Driven Emergence</strong> — How simple event processes, coupled through temporal feedback, generate stable patterns, trajectories, and effective laws.</li>
+            <li><strong>Multipoint Processes & Neural‑Inspired Dynamics</strong> — How distributed memory interactions can implement mechanisms reminiscent of neural computation, without classical weights or continuous activations.</li>
+            <li><strong>Embodied Memory Systems (Physical AI)</strong> — How memory‑based processes can be physically instantiated to produce adaptive, intelligent behavior in real‑world systems.</li>
+            <li><strong>Emergent Geometry & Structure Formation</strong> — How spatial order, dimensionality, and coherent structures arise from purely temporal relationships.</li>
+            <li><strong>Minimal Models of Intelligence</strong> — Developing compact, testable models that reveal how complex behavior emerges from simple memory‑driven interactions.</li>
         </ul>
-    </section>
-
-    <section>
-        <h2>Current Research</h2>
-        <p>
-            <strong>Emergence from Nothing</strong> — a minimal framework exploring how structure may arise 
-            from stochastic events and memory interactions.
-        </p>
-        <p>
-            We investigate how simple update rules, coupled through temporal feedback, can produce 
-            trajectories, attractors, and higher‑order organization.
-        </p>
-    </section>
-
-    <section>
-        <h2>Philosophy</h2>
-        <p>
-            Build simple models. Test them rigorously. Share results openly.
-        </p>
     </section>
 
     <section>
