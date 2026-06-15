@@ -1,14 +1,23 @@
-<!-- Two trajectory knot -->
-<svg width="180" height="180" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg">
-  <!-- Trajectory 1 -->
-  <path d="M20 140 C60 40, 120 40, 160 140" 
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Trajectory A -->
+  <path d="M30 150 
+           C 60 40, 140 40, 170 150
+           S 60 260, 30 150"
         stroke="#111" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
 
-  <!-- Trajectory 2 -->
-  <path d="M20 40 C60 140, 120 140, 160 40" 
+  <!-- Trajectory B -->
+  <path d="M30 50
+           C 80 160, 120 160, 170 50
+           S 120 -60, 30 50"
         stroke="#111" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
 
-  <!-- Memory decay markers -->
-  <circle cx="60" cy="90" r="6" fill="#111" opacity="0.7"/>
-  <circle cx="120" cy="90" r="6" fill="#111" opacity="0.5"/>
+  <!-- Memory markers on Trajectory A -->
+  <circle cx="70" cy="100" r="6" fill="#111" opacity="0.75"/>
+  <circle cx="130" cy="100" r="6" fill="#111" opacity="0.55"/>
+
+  <!-- Memory markers on Trajectory B -->
+  <circle cx="100" cy="140" r="6" fill="#111" opacity="0.65"/>
+  <circle cx="100" cy="60" r="6" fill="#111" opacity="0.45"/>
+
 </svg>
