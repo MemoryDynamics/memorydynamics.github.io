@@ -1,23 +1,30 @@
-<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<svg width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Trajectory A -->
-  <path d="M30 150 
-           C 60 40, 140 40, 170 150
-           S 60 260, 30 150"
-        stroke="#111" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <!-- Trajectory A (blue-ish memory decay) -->
+  <path d="M40 180 
+           C 80 40, 140 40, 180 180
+           S 80 300, 40 180"
+        stroke="url(#gradA)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
 
-  <!-- Trajectory B -->
-  <path d="M30 50
-           C 80 160, 120 160, 170 50
-           S 120 -60, 30 50"
-        stroke="#111" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+  <!-- Trajectory B (orange-ish memory decay) -->
+  <path d="M40 40
+           C 100 180, 120 180, 180 40
+           S 120 -80, 40 40"
+        stroke="url(#gradB)" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
 
-  <!-- Memory markers on Trajectory A -->
-  <circle cx="70" cy="100" r="6" fill="#111" opacity="0.75"/>
-  <circle cx="130" cy="100" r="6" fill="#111" opacity="0.55"/>
+  <!-- Gradients for memory decay -->
+  <defs>
+    <linearGradient id="gradA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a3d91" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#4fa3ff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#bfe0ff" stop-opacity="0.3"/>
+    </linearGradient>
 
-  <!-- Memory markers on Trajectory B -->
-  <circle cx="100" cy="140" r="6" fill="#111" opacity="0.65"/>
-  <circle cx="100" cy="60" r="6" fill="#111" opacity="0.45"/>
+    <linearGradient id="gradB" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b34700" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#ff9a4d" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ffe0c2" stop-opacity="0.3"/>
+    </linearGradient>
+  </defs>
 
 </svg>
